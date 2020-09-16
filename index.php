@@ -26,7 +26,7 @@ if ($_POST) { //postback
     $correo = $_POST["txtCorreo"];
     $nombreImagen = "";
 
-    if ($_FILES["archivo"]["error"] === UPLOAD_ERR_OK) {
+    if ($_FILES["archivo"]["error"] === UPLOAD_ERR_OK) { //Guarda una imagen
 
         $nombreAleatorio = date("Ymdhmsi");
         $archivo_tmp = $_FILES["archivo"]["tmp_name"];
